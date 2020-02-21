@@ -877,8 +877,7 @@ int main(int argc, char *argv[]) {
 
 \section{Metrics}
 
-Unfortunately, timing with \flags{time} is a little unreliable, it depends greatly on the alloted CPU resources (CPU\%).
-I think the profiles are better, but I'm not sure.
+Allocations by the compiler:
 
 \begin{verbatim}
 	ptxas info    : 0 bytes gmem
@@ -889,8 +888,11 @@ I think the profiles are better, but I'm not sure.
 	ptxas info    : Used 22 registers, 5280 bytes smem, 376 bytes cmem[0], 8 bytes cmem[2]
 \end{verbatim}
 
+\noindent Unfortunately, timing with \flags{time} is a little unreliable, it depends greatly on the alloted CPU resources (CPU\%).
+I think the profiles are better, but I'm not sure.
 
-Timing with \flags{time}:
+\vspace{0.5cm}
+\noindent Timing with \flags{time},
 angles\_per\_thread = 1:
 \begin{verbatim} 
 	0.37 user
@@ -899,15 +901,18 @@ angles\_per\_thread = 1:
 	91%CPU
 \end{verbatim}
 
+\vspace{0.5cm}
+
+\noindent angles\_per\_thread = 5:
 \begin{verbatim}
 	0.18 user
 	0.40 system
 	0:00.64 elapsed
 	91%CPU
 \end{verbatim}
-\subsubsection{Profiles of version B}
-\img{B1_prof}{Profile of version B, with angles\_per\_thread = 1}
-\img{interleaved_synch}{Profile of version B, with angles\_per\_thread = 5}
+\subsubsection{Profiles}
+\img{B1_prof}{Profile with angles\_per\_thread = 1}
+\img{interleaved_synch}{Profile with angles\_per\_thread = 5}
 
 The second version is faster by far, it appears that letting each thread do more work is better.
 Or perhaps the relieved pressure on the internal memory bus is causing the gain in performance.
