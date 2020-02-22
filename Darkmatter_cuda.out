@@ -20,13 +20,13 @@
 \BOOKMARK [3][-]{subsubsection.5.1.2}{Local memory}{subsection.5.1}% 20
 \BOOKMARK [2][-]{subsection.5.2}{Shared memory}{section.5}% 21
 \BOOKMARK [3][-]{subsubsection.5.2.1}{Bank conflicts}{subsection.5.2}% 22
-\BOOKMARK [2][-]{subsection.5.3}{Warp level memory constructs}{section.5}% 23
-\BOOKMARK [1][-]{section.6}{Checking and measuring memory use}{part.1}% 24
-\BOOKMARK [2][-]{subsection.6.1}{From source code}{section.6}% 25
-\BOOKMARK [2][-]{subsection.6.2}{From the compiler}{section.6}% 26
-\BOOKMARK [1][-]{section.7}{Making things parallel}{part.1}% 27
-\BOOKMARK [2][-]{subsection.7.1}{Atomic functions}{section.7}% 28
-\BOOKMARK [2][-]{subsection.7.2}{Overlap}{section.7}% 29
+\BOOKMARK [1][-]{section.6}{Checking and measuring memory use}{part.1}% 23
+\BOOKMARK [2][-]{subsection.6.1}{From source code}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.2}{From the compiler}{section.6}% 25
+\BOOKMARK [1][-]{section.7}{Making things parallel}{part.1}% 26
+\BOOKMARK [2][-]{subsection.7.1}{Atomic functions}{section.7}% 27
+\BOOKMARK [2][-]{subsection.7.2}{Warp level memory constructs}{section.7}% 28
+\BOOKMARK [2][-]{subsection.7.3}{Overlap}{section.7}% 29
 \BOOKMARK [0][-]{part.2}{II The problem}{}% 30
 \BOOKMARK [1][-]{section.8}{Background}{part.2}% 31
 \BOOKMARK [1][-]{section.9}{Data}{part.2}% 32
@@ -40,18 +40,24 @@
 \BOOKMARK [3][-]{subsubsection.12.2.1}{Histogram size}{subsection.12.2}% 40
 \BOOKMARK [3][-]{subsubsection.12.2.2}{Block size}{subsection.12.2}% 41
 \BOOKMARK [3][-]{subsubsection.12.2.3}{\043 of registers}{subsection.12.2}% 42
-\BOOKMARK [2][-]{subsection.12.3}{Memory}{section.12}% 43
-\BOOKMARK [2][-]{subsection.12.4}{Warp level}{section.12}% 44
-\BOOKMARK [1][-]{section.13}{Design and Implementation}{part.3}% 45
-\BOOKMARK [2][-]{subsection.13.1}{Macros and definitions}{section.13}% 46
-\BOOKMARK [2][-]{subsection.13.2}{Preprocessing}{section.13}% 47
-\BOOKMARK [3][-]{subsubsection.13.2.1}{Calculating the statistic}{subsection.13.2}% 48
-\BOOKMARK [2][-]{subsection.13.3}{The kernel}{section.13}% 49
-\BOOKMARK [3][-]{subsubsection.13.3.1}{Writes}{subsection.13.3}% 50
-\BOOKMARK [2][-]{subsection.13.4}{The main function}{section.13}% 51
-\BOOKMARK [1][-]{section.14}{Metrics}{part.3}% 52
-\BOOKMARK [2][-]{subsubsection.14.0.1}{Profiles}{section.14}% 53
-\BOOKMARK [0][-]{part.4}{IV Conclusion}{}% 54
-\BOOKMARK [1][-]{section.15}{Discussion}{part.4}% 55
-\BOOKMARK [1][-]{section.16}{Rules of thumb and other lessons learned}{part.4}% 56
-\BOOKMARK [1][-]{section.17}{Improvements}{part.4}% 57
+\BOOKMARK [3][-]{subsubsection.12.2.4}{Grid size}{subsection.12.2}% 43
+\BOOKMARK [2][-]{subsection.12.3}{Memory}{section.12}% 44
+\BOOKMARK [2][-]{subsection.12.4}{Warp level}{section.12}% 45
+\BOOKMARK [1][-]{section.13}{Design and Implementation}{part.3}% 46
+\BOOKMARK [2][-]{subsection.13.1}{Macros and definitions}{section.13}% 47
+\BOOKMARK [2][-]{subsection.13.2}{Preprocessing}{section.13}% 48
+\BOOKMARK [3][-]{subsubsection.13.2.1}{Calculating the statistic}{subsection.13.2}% 49
+\BOOKMARK [2][-]{subsection.13.3}{The kernel}{section.13}% 50
+\BOOKMARK [3][-]{subsubsection.13.3.1}{Kernel reads}{subsection.13.3}% 51
+\BOOKMARK [3][-]{subsubsection.13.3.2}{Kernel calculations}{subsection.13.3}% 52
+\BOOKMARK [3][-]{subsubsection.13.3.3}{Kernel writes}{subsection.13.3}% 53
+\BOOKMARK [2][-]{subsection.13.4}{The main function}{section.13}% 54
+\BOOKMARK [1][-]{section.14}{Results}{part.3}% 55
+\BOOKMARK [1][-]{section.15}{Metrics}{part.3}% 56
+\BOOKMARK [2][-]{subsection.15.1}{Compiler memory allocation}{section.15}% 57
+\BOOKMARK [2][-]{subsection.15.2}{Timing}{section.15}% 58
+\BOOKMARK [3][-]{subsubsection.15.2.1}{Profiles}{subsection.15.2}% 59
+\BOOKMARK [0][-]{part.4}{IV Conclusion}{}% 60
+\BOOKMARK [1][-]{section.16}{Discussion}{part.4}% 61
+\BOOKMARK [1][-]{section.17}{Rules of thumb and other lessons learned}{part.4}% 62
+\BOOKMARK [1][-]{section.18}{Improvements}{part.4}% 63

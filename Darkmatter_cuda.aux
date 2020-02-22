@@ -24,6 +24,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Runtime of a typical CUDA program}{2}{subsection.1.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Units of computation}{3}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Warp}{3}{subsection.2.1}\protected@file@percent }
+\newlabel{sssec:gmem_warp}{{2.1}{3}{Warp}{subsection.2.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Thread blocks}{3}{subsection.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Grids}{3}{subsection.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Cooperative groups}{3}{subsection.2.4}\protected@file@percent }
@@ -31,7 +32,6 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4}Globally scoped memory}{4}{section.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Global memory}{4}{subsection.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Global memory access within a warp}{4}{subsubsection.4.1.1}\protected@file@percent }
-\newlabel{sssec:gmem_warp}{{4.1.1}{4}{Global memory access within a warp}{subsubsection.4.1.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Constant memory}{4}{subsection.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Texture memory}{5}{subsection.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5}Locally scoped memory}{6}{section.5}\protected@file@percent }
@@ -40,52 +40,57 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Local memory}{6}{subsubsection.5.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Shared memory}{6}{subsection.5.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Bank conflicts}{6}{subsubsection.5.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Warp level memory constructs}{7}{subsection.5.3}\protected@file@percent }
-\newlabel{ssec:warp_mem}{{5.3}{7}{Warp level memory constructs}{subsection.5.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Checking and measuring memory use}{7}{section.6}\protected@file@percent }
 \newlabel{sec:meas_mem}{{6}{7}{Checking and measuring memory use}{section.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.1}From source code}{7}{subsection.6.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2}From the compiler}{7}{subsection.6.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {7}Making things parallel}{8}{section.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Atomic functions}{8}{subsection.7.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Overlap}{8}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Warp level memory constructs}{8}{subsection.7.2}\protected@file@percent }
+\newlabel{ssec:warp_mem}{{7.2}{8}{Warp level memory constructs}{subsection.7.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Overlap}{8}{subsection.7.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {part}{II\hspace  {1em}The problem}{9}{part.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {8}Background}{9}{section.8}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {9}Data}{9}{section.9}\protected@file@percent }
 \newlabel{sec:data}{{9}{9}{Data}{section.9}{}}
-\@writefile{toc}{\contentsline {paragraph}{My program will also exploit}{9}{section*.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {10}The work}{9}{section.10}\protected@file@percent }
 \newlabel{sec:stat_test}{{10}{9}{The work}{section.10}{}}
-\@writefile{toc}{\contentsline {part}{III\hspace  {1em}Design, Implementation and validation}{11}{part.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {11}Overview}{11}{section.11}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Process}{11}{subsection.11.1}\protected@file@percent }
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}the project makefile}{12}{lstlisting.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {12}Analysis}{13}{section.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.1}What device is available to us}{13}{subsection.12.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.2}Optimal numbers}{13}{subsection.12.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.1}Histogram size}{13}{subsubsection.12.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {part}{III\hspace  {1em}Design, Implementation and validation}{10}{part.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}Overview}{10}{section.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Process}{10}{subsection.11.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}the project makefile}{11}{lstlisting.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {12}Analysis}{12}{section.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1}What device is available to us}{12}{subsection.12.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.2}Optimal numbers}{12}{subsection.12.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.1}Histogram size}{12}{subsubsection.12.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.2}Block size}{13}{subsubsection.12.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.3}\# of registers}{14}{subsubsection.12.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.3}Memory}{14}{subsection.12.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {12.4}Warp level}{14}{subsection.12.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {13}Design and Implementation}{15}{section.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {13.1}Macros and definitions}{15}{subsection.13.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {13.2}Preprocessing}{16}{subsection.13.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.2.1}Calculating the statistic}{16}{subsubsection.13.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {13.3}The kernel}{17}{subsection.13.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.3.1}Writes}{18}{subsubsection.13.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {13.4}The main function}{18}{subsection.13.4}\protected@file@percent }
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}The main function}{18}{lstlisting.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {14}Metrics}{20}{section.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {14.0.1}Profiles}{20}{subsubsection.14.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.3}\# of registers}{13}{subsubsection.12.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.2.4}Grid size}{13}{subsubsection.12.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.3}Memory}{13}{subsection.12.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.4}Warp level}{13}{subsection.12.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {13}Design and Implementation}{14}{section.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.1}Macros and definitions}{14}{subsection.13.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.2}Preprocessing}{15}{subsection.13.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.2.1}Calculating the statistic}{15}{subsubsection.13.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.3}The kernel}{16}{subsection.13.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.3.1}Kernel reads}{17}{subsubsection.13.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.3.2}Kernel calculations}{17}{subsubsection.13.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.3.3}Kernel writes}{17}{subsubsection.13.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.4}The main function}{17}{subsection.13.4}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}The main function}{17}{lstlisting.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {14}Results}{19}{section.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {15}Metrics}{20}{section.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {15.1}Compiler memory allocation}{20}{subsection.15.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {15.2}Timing}{20}{subsection.15.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {15.2.1}Profiles}{20}{subsubsection.15.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Profile with angles\_per\_thread = 1}}{20}{figure.1}\protected@file@percent }
 \newlabel{fig:B1_prof}{{1}{20}{Profile with angles\_per\_thread = 1}{figure.1}{}}
-\@writefile{toc}{\contentsline {part}{IV\hspace  {1em}Conclusion}{20}{part.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Profile with angles\_per\_thread = 5}}{21}{figure.2}\protected@file@percent }
 \newlabel{fig:interleaved_synch}{{2}{21}{Profile with angles\_per\_thread = 5}{figure.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {15}Discussion}{21}{section.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {16}Rules of thumb and other lessons learned}{21}{section.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {17}Improvements}{22}{section.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {part}{IV\hspace  {1em}Conclusion}{21}{part.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16}Discussion}{21}{section.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {17}Rules of thumb and other lessons learned}{21}{section.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {18}Improvements}{22}{section.18}\protected@file@percent }
 \newlabel{LastPage}{{}{22}{}{page.22}{}}
 \xdef\lastpage@lastpage{22}
 \xdef\lastpage@lastpageHy{22}
